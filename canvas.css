@@ -1,0 +1,6 @@
+/* Minimal css style for the canvas */
+body { margin: 0; background: transparent; }
+canvas { 
+    -webkit-mask-image: linear-gradient(to bottom, black 20%, transparent 100%); 
+    mask-image: linear-gradient(to bottom, black 20%, transparent 100%); 
+} /* Gradient so the characters gradually fade out */
