@@ -1,6 +1,7 @@
 <div id="title"></div>
 
 ![Matrix Rain Generator](webpExamples/greenMatrixRainREADME.webp)
+[🇧🇷 Ler em português](readme-pt-BR.md)
 
 <h1 align="center">A new way to style READMEs</h1>
 
