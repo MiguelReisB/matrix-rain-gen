@@ -10,11 +10,11 @@
 
 <br>
 
-**#### O GitHub remove o `<canvas>` (e a maior parte dos estilos CSS) e o JavaScript dos READMEs, então o efeito não pode ser executado diretamente neles. Esta ferramenta renderiza a animação quadro a quadro em um navegador sem interface gráfica e reúne os quadros em um WebP animado, que funciona em qualquer tag HTML `<img>` e no Markdown `![]()`, incluindo o README do seu perfil no GitHub. [Veja um exemplo utilizado no meu perfil](https://github.com/MiguelReisB) e também o exemplo gerado por padrão na primeira execução do código abaixo:**
+#### O GitHub remove o `<canvas>` (e a maior parte dos estilos CSS) e o JavaScript dos READMEs, então o efeito não pode ser executado diretamente neles. Esta ferramenta renderiza a animação quadro a quadro em um navegador sem interface gráfica e reúne os quadros em um WebP animado, que funciona em qualquer tag HTML `<img>` e no Markdown `![]()`, incluindo o README do seu perfil no GitHub. [Veja um exemplo utilizado no meu perfil](https://github.com/MiguelReisB) e também o exemplo gerado por padrão na primeira execução do código abaixo:**
 
 ![Matrix Rain Example](webpExamples/defaultBlueMatrixRain.webp)
 
-**## Como funciona**
+## Como funciona
 
 1. `script.js` desenha a chuva no elemento `<canvas>` de `rain.html`. Cada quadro é uma função pura de seu índice, então a animação é determinística: uma mesma semente sempre produz o mesmo resultado.
 
@@ -24,7 +24,7 @@
 
 O loop é contínuo porque nenhuma coluna começa a cair se não puder terminar antes do fim da chuva. Os últimos quadros ficam vazios, funcionando como o “corte” entre o final e o início da animação.
 
-**## Requisitos do sistema**
+## Requisitos do sistema
 
 - Python 3.9+
 - Git (é claro)
@@ -32,16 +32,16 @@ O loop é contínuo porque nenhuma coluna começa a cair se não puder terminar 
 
 As demais dependências são instaladas pelo arquivo `requirements.txt`.
 
-**## Primeiros passos**
+## Primeiros passos
 
-**### 1. Clone este repositório e continue com as próximas etapas no mesmo terminal**
+### 1. Clone este repositório e continue com as próximas etapas no mesmo terminal
 
 ```bash
 git clone https://github.com/MiguelReisB/matrix-rain-gen.git
 cd matrix-rain-gen
 ```
 
-**### 2. Crie e ative um ambiente virtual**
+### 2. Crie e ative um ambiente virtual
 
 Linux / macOS:
 
@@ -66,7 +66,7 @@ py -m venv .venv
 
 > Após esta etapa, você deverá ver `(.venv)` no início da linha de comando do terminal.
 
-**### 3. Instale as dependências**
+### 3. Instale as dependências
 
 ```bash
 pip install -r requirements.txt
@@ -77,11 +77,11 @@ playwright install chromium
 
 Em um servidor Linux sem interface gráfica, use `playwright install --with-deps chromium` no lugar.
 
-**### 4. Personalize e altere as configurações do código e os parâmetros do WebP como preferir**
+### 4. Personalize e altere as configurações do código e os parâmetros do WebP como preferir
 
-**#### *Consulte a [seção de personalização](#customize)**
+#### *Consulte a [seção de personalização](#customize)
 
-**#### 4.1 Em seguida, gere o WebP**
+#### 4.1 Em seguida, gere o WebP
 
 ```bash
 python capture.py
@@ -95,14 +95,14 @@ python3 capture.py
 
 O resultado será salvo como `matrixRain.webp` na pasta do projeto.
 
-**### 5. Quando terminar e estiver satisfeito com o resultado final:**
+### 5. Quando terminar e estiver satisfeito com o resultado final:
 
 ```bash
 # Finalize / encerre a execução do .venv com:
 deactivate
 ```
 
-**### 6. Use-o em um README (coloque o arquivo dentro da pasta do projeto, como um recurso separado)**
+### 6. Use-o em um README (coloque o arquivo dentro da pasta do projeto, como um recurso separado)
 
 Como HTML:
 
@@ -122,7 +122,7 @@ Como Markdown:
 
 Edite as constantes de `script.js` e `capture.py` e, em seguida, execute `python capture.py` (ou `python3 capture.py`).
 
-**### Em `script.js`**
+### Em `script.js`
 
 | Configuração | Padrão | O que altera |
 |---|---|---|
@@ -142,7 +142,7 @@ Total de quadros = `FPS × (SECONDS_RAIN + SECONDS_EMPTY)`, e a duração total 
 
 > **Dica:** enquanto ajusta as cores e os tamanhos, use `SECONDS_RAIN = 2`, um `FPS` mais baixo e `method = 0` para gerar uma prévia mais rapidamente. Quando estiver satisfeito com o resultado, restaure os valores finais.
 
-**### Em `capture.py`**
+### Em `capture.py`
 
 | Configuração | Padrão | O que altera |
 |---|---|---|
@@ -154,23 +154,23 @@ Total de quadros = `FPS × (SECONDS_RAIN + SECONDS_EMPTY)`, e a duração total 
 | `method` | `4` | Nível de esforço do codificador (0–6). `6` gera o menor arquivo, mas é muito mais lento. `0` é o mais rápido e é útil durante os testes. |
 | `exact` | `False` | Quando `True`, mantém dados de cor sob pixels totalmente transparentes. Isso não é necessário neste projeto. |
 
-**### Em `rain.html`**
+### Em `rain.html`
 
 | Configuração | Padrão | O que altera |
 |---|---|---|
 | `width`, `height` | `900`, `600` | Dimensões da captura de tela. Devem corresponder às dimensões em `capture.py` e `script.js`. |
 
-**### Em `style.css`**
+### Em `style.css`
 
 | Configuração | Padrão | O que altera |
 |---|---|---|
 | `CSS mask-image` | `black 20%` | Define onde começa o efeito de desaparecimento na parte inferior. `black 60%` faz o efeito começar mais abaixo; remover a máscara cria uma borda abrupta. |
 
-**## Exemplos e respectivas configurações alteradas**
+## Exemplos e respectivas configurações alteradas
 
 *Você encontra cada exemplo na pasta `webpExamples`.*
 
-**### Verde clássico do Matrix**
+### Verde clássico do Matrix
 
 ![Classic green](webpExamples/greenMatrixRain.webp)
 
@@ -182,7 +182,7 @@ Total de quadros = `FPS × (SECONDS_RAIN + SECONDS_EMPTY)`, e a duração total 
 | `velForFrame` | `35 / FPS` |
 | Intervalos em `cron` | `FPS * 0.3` |
 
-**### Banner vermelho largo e lento**
+### Banner vermelho largo e lento
 
 ![Wide banner](webpExamples/redMatrixRain.webp)
 
@@ -195,7 +195,7 @@ Total de quadros = `FPS × (SECONDS_RAIN + SECONDS_EMPTY)`, e a duração total 
 
 > Lembre-se de atualizar o tamanho do canvas nos três locais: constantes de `script.js`, tag `<canvas>` e `capture.py`.
 
-**### Roxo rápido e denso**
+### Roxo rápido e denso
 
 ![Fast and Dense](webpExamples/purpleMatrixRain.webp)
 
@@ -206,7 +206,7 @@ Total de quadros = `FPS × (SECONDS_RAIN + SECONDS_EMPTY)`, e a duração total 
 | `velForFrame` | `4 / FPS` |
 | `FONT_SIZE` | 24 |
 
-**### Âmbar alto**
+### Âmbar alto
 
 ![Tall Amber](webpExamples/amberMatrixRain.webp)
 
@@ -219,15 +219,15 @@ Total de quadros = `FPS × (SECONDS_RAIN + SECONDS_EMPTY)`, e a duração total 
 
 (Altere `PATH_SIZE` para obter uma coluna de caracteres mais longa), mas lembre-se de que isso também aumentará ainda mais o tamanho do arquivo.
 
-**## Cores que você deveria experimentar**
+## Cores que você deveria experimentar
 
-**### Dê um visual único à sua própria Matrix Rain usando a cor principal dos seus projetos**
+### Dê um visual único à sua própria Matrix Rain usando a cor principal dos seus projetos
 
 > Mas tenha cuidado!
 
 Dependendo da cor dos caracteres e do tema utilizado pelo usuário (escuro ou claro), a animação pode não ficar muito visível. Isso acontece porque o fundo é transparente e as colunas desaparecem gradualmente.
 
-**Aqui estão algumas cores que funcionam bem nos dois temas:**
+Aqui estão algumas cores que funcionam bem nos dois temas:
 
 | COR | HEX | RGB | VALOR PARA COLOCAR EM `COLOR` |
 |---|---|---|---|
@@ -242,7 +242,7 @@ Dependendo da cor dos caracteres e do tema utilizado pelo usuário (escuro ou cl
 | Laranja | `#F97316` | 249, 115, 22 | `'249, 115, 22'` |
 | Âmbar | `#F59E0B` | 245, 158, 11 | `'245, 158, 11'` |
 
-**## Problemas que você pode encontrar e como resolvê-los**
+## Problemas que você pode encontrar e como resolvê-los
 
 - **Erro `Executable doesn't exist` do Playwright:** execute `playwright install chromium` dentro do ambiente virtual ativado.
 - **Falta de memória:** reduza `WORKERS`, `FPS` ou as dimensões do canvas.
@@ -250,7 +250,7 @@ Dependendo da cor dos caracteres e do tema utilizado pelo usuário (escuro ou cl
 - **Geração lenta:** reduza o valor de `method` em `capture.py`. O tempo de captura e o tempo de codificação são exibidos ao final, permitindo identificar qual etapa está demorando mais.
 - **A animação não faz um loop contínuo:** mantenha `SECONDS_EMPTY` acima de zero.
 
-**## Indo além**
+## Indo além
 
 Para colocar um texto sobre os caracteres em queda e estilizar esse texto com uma fonte interessante (como a que aparece no [topo deste README](#title)), usei:
 
@@ -259,15 +259,15 @@ Para colocar um texto sobre os caracteres em queda e estilizar esse texto com um
 - Selecione o Editor de Texto, escreva o texto desejado e escolha uma fonte, um tamanho e uma cor que combinem;
 - Exporte como WebP...
 
-**### E voilà!**
+### E voilà!
 
 ![Miguel Dev Matrix Rain](webpExamples/titleMatrixRain.webp)
 
 > Observe que isso aumenta bastante o tamanho do arquivo.
 
-**## Uma ajudinha é sempre bem-vinda**
+## Uma ajudinha é sempre bem-vinda
 
-**#### Encontrou algo que poderia ser melhorado ou algum bug/erro?**
+#### Encontrou algo que poderia ser melhorado ou algum bug/erro?
 
 Algumas formas de contribuir:
 
@@ -277,10 +277,10 @@ Algumas formas de contribuir:
 
 Posso garantir que responderei e analisarei a solicitação e o código o mais rápido possível!
 
-**## Licença**
+## Licença
 
 **Apache 2.0** | [Ver licença](LICENSE)
 
 ---
 
-**#### Se você gostou ou achou o projeto útil de alguma forma, não se esqueça de deixar uma ⭐ para que mais pessoas possam encontrá-lo e utilizá-lo!**
+#### Se você gostou ou achou o projeto útil de alguma forma, não se esqueça de deixar uma ⭐ para que mais pessoas possam encontrá-lo e utilizá-lo!
