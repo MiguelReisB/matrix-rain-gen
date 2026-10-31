@@ -10,7 +10,7 @@
 
 <br>
 
-#### O GitHub remove o `<canvas>` (e a maior parte dos estilos CSS) e o JavaScript dos READMEs, então o efeito não pode ser executado diretamente neles. Esta ferramenta renderiza a animação quadro a quadro em um navegador sem interface gráfica e reúne os quadros em um WebP animado, que funciona em qualquer tag HTML `<img>` e no Markdown `![]()`, incluindo o README do seu perfil no GitHub. [Veja um exemplo utilizado no meu perfil](https://github.com/MiguelReisB) e também o exemplo gerado por padrão na primeira execução do código abaixo:**
+#### O GitHub remove o `<canvas>` (e a maior parte dos estilos CSS) e o JavaScript dos READMEs, então o efeito não pode ser executado diretamente neles. Esta ferramenta renderiza a animação quadro a quadro em um navegador sem interface gráfica e reúne os quadros em um WebP animado, que funciona em qualquer tag HTML `<img>` e no Markdown `![]()`, incluindo o README do seu perfil no GitHub. [Veja um exemplo utilizado no meu perfil](https://github.com/MiguelReisB) e também o exemplo gerado por padrão na primeira execução do código abaixo:
 
 ![Matrix Rain Example](webpExamples/defaultBlueMatrixRain.webp)
 
@@ -279,7 +279,7 @@ Posso garantir que responderei e analisarei a solicitação e o código o mais r
 
 ## Licença
 
-**Apache 2.0** | [Ver licença](LICENSE)
+*Apache 2.0* | [Ver licença](LICENSE)
 
 ---
 
