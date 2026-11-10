@@ -61,7 +61,7 @@ py -m venv .venv
 .venv\Scripts\activate.bat
 ```
 
-> After this step, you should see `(.venv)` at the start of the commmand line in the terminal
+> After this step, you should see `(.venv)` at the start of the command line in the terminal
 
 ### 3. Install dependencies
 
