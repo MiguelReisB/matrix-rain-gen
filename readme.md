@@ -261,7 +261,7 @@ Some ways you can contribute is by...
 I can promise that i'll respond / analyse the request and code as fast as it is possible!
 
 ## License
-*APACHE 2.0* | [See License](LICENSE)
+*MIT* - Feel free to use it as you wish | [See License](LICENSE)
 
 ---
 #### If you liked it or found it useful in some way, don't forget to leave a ⭐ so more people can find and use it too!
