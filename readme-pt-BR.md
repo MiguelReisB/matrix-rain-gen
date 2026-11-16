@@ -279,7 +279,7 @@ Posso garantir que responderei e analisarei a solicitação e o código o mais r
 
 ## Licença
 
-*Apache 2.0* | [Ver licença](LICENSE)
+*MIT* - Use como quiser | [Ver licença](LICENSE)
 
 ---
 
