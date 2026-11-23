@@ -1,6 +1,6 @@
 <div id="title"></div>
 
-![Matrix Rain Generator](webpExamples/greenMatrixRainREADME.webp)
+![Matrix Rain Generator](https://github.com/MiguelReisB/matrix-rain-gen/releases/download/v1.0/greenMatrixRainREADME.webp)
 
 <h1 align="center">Uma nova forma de estilizar READMEs</h1>
 
@@ -12,7 +12,7 @@
 
 #### O GitHub remove o `<canvas>` (e a maior parte dos estilos CSS) e o JavaScript dos READMEs, então o efeito não pode ser executado diretamente neles. Esta ferramenta renderiza a animação quadro a quadro em um navegador sem interface gráfica e reúne os quadros em um WebP animado, que funciona em qualquer tag HTML `<img>` e no Markdown `![]()`, incluindo o README do seu perfil no GitHub. [Veja um exemplo utilizado no meu perfil](https://github.com/MiguelReisB) e também o exemplo gerado por padrão na primeira execução do código abaixo:
 
-![Matrix Rain Example](webpExamples/defaultBlueMatrixRain.webp)
+![Matrix Rain Example](https://github.com/MiguelReisB/matrix-rain-gen/releases/download/v1.0/defaultBlueMatrixRain.webp))
 
 ## Como funciona
 
@@ -172,7 +172,7 @@ Total de quadros = `FPS × (SECONDS_RAIN + SECONDS_EMPTY)`, e a duração total 
 
 ### Verde clássico do Matrix
 
-![Classic green](webpExamples/greenMatrixRain.webp)
+![Verde Clássico](https://github.com/MiguelReisB/matrix-rain-gen/releases/download/v1.0/greenMatrixRain.webp)
 
 | Configuração alterada | Valor |
 |---|---|
@@ -184,7 +184,7 @@ Total de quadros = `FPS × (SECONDS_RAIN + SECONDS_EMPTY)`, e a duração total 
 
 ### Banner vermelho largo e lento
 
-![Wide banner](webpExamples/redMatrixRain.webp)
+![Banner vermelho Largo e Lento](https://github.com/MiguelReisB/matrix-rain-gen/releases/download/v1.0/redMatrixRain.webp)
 
 | Configurações alteradas | Valor |
 |---|---|
@@ -197,7 +197,7 @@ Total de quadros = `FPS × (SECONDS_RAIN + SECONDS_EMPTY)`, e a duração total 
 
 ### Roxo rápido e denso
 
-![Fast and Dense](webpExamples/purpleMatrixRain.webp)
+![Roxo Rápido e Denso](https://github.com/MiguelReisB/matrix-rain-gen/releases/download/v1.0/purpleMatrixRain.webp)
 
 | Configurações alteradas | Valor |
 |---|---|
@@ -208,7 +208,7 @@ Total de quadros = `FPS × (SECONDS_RAIN + SECONDS_EMPTY)`, e a duração total 
 
 ### Âmbar alto
 
-![Tall Amber](webpExamples/amberMatrixRain.webp)
+![Âmbar Alto](https://github.com/MiguelReisB/matrix-rain-gen/releases/download/v1.0/amberMatrixRain.webp)
 
 | Configurações alteradas | Valor |
 |---|---|
@@ -261,7 +261,7 @@ Para colocar um texto sobre os caracteres em queda e estilizar esse texto com um
 
 ### E voilà!
 
-![Miguel Dev Matrix Rain](webpExamples/titleMatrixRain.webp)
+![Miguel Dev Matrix Rain](https://github.com/MiguelReisB/matrix-rain-gen/releases/download/v1.0/titleMatrixRain.webp)
 
 > Observe que isso aumenta bastante o tamanho do arquivo.
 
