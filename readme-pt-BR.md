@@ -1,6 +1,6 @@
 <div id="title"></div>
 
-![Matrix Rain Generator](https://github.com/MiguelReisB/matrix-rain-gen/releases/download/v1.0/greenMatrixRainREADME.webp)
+![Matrix Rain Generator](https://github.com/MiguelReisB/matrix-rain-4-readme/releases/download/v1.0/matrixRain4README.webp)
 
 <h1 align="center">Uma nova forma de estilizar READMEs</h1>
 
